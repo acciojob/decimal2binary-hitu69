@@ -7,7 +7,7 @@ binaryStr = binaryStr + rem.toString()
 num = Math.floor(num/2)
 }
 
-return binaryStr.split("").reverse().join("")
+return parseInt(binaryStr.split("").reverse().join(""))
 }
 
 module.exports = decimalToBinary;
