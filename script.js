@@ -1,13 +1,13 @@
 function decimalToBinary(num){
-et b = 0;
-let i = 1;
-while (a != 0) {
-let rem = a % 2;
-b = b + rem * i;
-i = i * 10;
-a = Math.floor(a / 2);
+let binaryStr = ""
+while(num>0){
+let rem = num%2;
+binaryStr = binaryStr + rem.toString()
+
+num = Math.floor(num/2)
 }
-return b;
+
+return binaryStr.split("").reverse().join("")
 }
 
 module.exports = decimalToBinary;
