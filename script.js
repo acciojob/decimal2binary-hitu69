@@ -1,13 +1,5 @@
-function decimalToBinary(num){
-let binaryStr = ""
-while(num>0){
-let rem = num%2;
-binaryStr = binaryStr + rem.toString()
-
-num = Math.floor(num/2)
+function decimalToBinary(num) {
+  // Write your code here
 }
 
-return parseInt(binaryStr.split("").reverse().join(""))
-}
-
-module.exports = decimalToBinary;
+window.decimalToBinary = decimalToBinary;
